@@ -1,0 +1,15 @@
+﻿@model CadastroCliente.Domain.Services.Clientes.Dtos.ClienteDto
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Excluir</h1>
+
+<h3>Deseja realmente excluir este registro?</h3>
+<div>    
+    <form asp-action="Delete" >
+        <input type="submit" value="Excluir" class="btn btn-danger" /> |
+        <a asp-action="Index">Voltar</a>
+    </form>
+</div>
